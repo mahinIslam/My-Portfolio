@@ -188,3 +188,69 @@ textarea {
 .input {
 	height: 64px;
 }
+/*media query responsive styles*/
+
+@media screen and(max-width:576px){
+	.header{
+		background-image: none;
+	}
+ .skills-containers ,
+ .banner,
+ .about-info-container ,
+ .Contact{
+flex-direction: column;
+gap:20px;
+padding: 10px 20px;
+ }
+ .banner{
+	margin: 0 20px ;
+ }
+ img{
+	width: 100%;
+ }
+ nav ul , nav{
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
+	padding-left: 20px;
+ }
+ nav li{
+	margin-left: 0;
+ }
+ .about ,.Contact{
+	padding: 20px;
+ }
+.resume-content{
+	flex-direction: column;
+	padding: 10px 20px;
+}
+.Contact input [type="text"],
+input [type="email"],
+textarea {
+	padding: 0 0 0 5px;
+}
+}
+@media screen and(min-width:577px)and (max-width:992px){
+	.about ,.Contact{
+		padding: 20px;
+		gap:10px;
+	 }
+	 .Contact , .banner{
+		flex-direction: column;
+	 }
+	 .Contact input [type="text"],
+input [type="email"],
+textarea {
+	padding: 0 0 0 5px;
+}
+
+	 nav ul , nav{
+		flex-direction: column;
+		gap: 20px;
+		align-items: flex-start;
+		padding-left: 20px;
+	 }
+	 nav li{
+		margin-left: 0;
+	 }
+}
